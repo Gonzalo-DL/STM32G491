@@ -1,0 +1,869 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32G491CCU6:STM32G491CCU6 STM32
+U 1 1 6127CAC5
+P 7250 5150
+F 0 "STM32" H 8050 4200 50  0000 L CNN
+F 1 "STM32G491CCU6" H 7850 4050 50  0000 L CNN
+F 2 "QFN50P700X700X60-49N-D" H 8900 5850 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32g491cc.pdf" H 8900 5750 50  0001 L CNN
+F 4 "MCU 32-bit ARM Cortex M4 RISC 256KB Flash 1.8V/2.5V/3.3V 48-Pin UFQFPN EP Tray" H 8900 5650 50  0001 L CNN "Description"
+F 5 "0.6" H 8900 5550 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 8900 5450 50  0001 L CNN "Manufacturer_Name"
+F 7 "STM32G491CCU6" H 8900 5350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-STM32G491CCU6" H 8900 5250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32G491CCU6?qs=eP2BKZSCXI7DW1LAe4ydBg%3D%3D" H 8900 5150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "STM32G491CCU6" H 8900 5050 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/stm32g491ccu6/stmicroelectronics" H 8900 4950 50  0001 L CNN "Arrow Price/Stock"
+	1    7250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPD6E004RSER:TPD6E004RSER IC1
+U 1 1 6128281F
+P 2500 -900
+F 0 "IC1" H 3000 -119 50  0000 C CNN
+F 1 "TPD6E004RSER" H 3000 -210 50  0000 C CNN
+F 2 "RSE0008A" H 3350 -500 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPD6E004&fileType=pdf" H 3350 -600 50  0001 L CNN
+F 4 "Low-Capacitance 6-Channel +/-15 kV ESD Protection Array for High-Speed Data Interfaces" H 3350 -700 50  0001 L CNN "Description"
+F 5 "" H 3350 -800 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 3350 -900 50  0001 L CNN "Manufacturer_Name"
+F 7 "TPD6E004RSER" H 3350 -1000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-TPD6E004RSER" H 3350 -1100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPD6E004RSER?qs=WxL8HmPi5r6%2FM5XQjCwSTg%3D%3D" H 3350 -1200 50  0001 L CNN "Mouser Price/Stock"
+F 10 "TPD6E004RSER" H 3350 -1300 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/tpd6e004rser/texas-instruments" H 3350 -1400 50  0001 L CNN "Arrow Price/Stock"
+	1    2500 -900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead EMI_VDDS_FILTER_USB1
+U 1 1 61284B2B
+P 1650 -1000
+F 0 "EMI_VDDS_FILTER_USB1" V 1376 -1000 50  0000 C CNN
+F 1 "BLM18HE152SN1D " V 1467 -1000 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 1580 -1000 50  0001 C CNN
+F 3 "https://www.mouser.ca/datasheet/2/281/ENFA0004-1915711.pdf" H 1650 -1000 50  0001 C CNN
+	1    1650 -1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61299917
+P 2100 10100
+F 0 "#PWR0101" H 2100 9850 50  0001 C CNN
+F 1 "GND" H 2105 9927 50  0000 C CNN
+F 2 "" H 2100 10100 50  0001 C CNN
+F 3 "" H 2100 10100 50  0001 C CNN
+	1    2100 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND2 Crystal_48MHz1
+U 1 1 6129AC26
+P 2100 9900
+F 0 "Crystal_48MHz1" H 2100 10168 50  0000 C CNN
+F 1 "CX2016DB48000C0FPLC1" H 2100 10077 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 2100 9900 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Kyocera%20International/CX2016DB48000C0FPLC1_DS.pdf" H 2100 9900 50  0001 C CNN
+	1    2100 9900
+	1    0    0    -1  
+$EndComp
+Text Label 7250 5650 2    50   ~ 0
+OSC_OUT
+Text Label 7250 5550 2    50   ~ 0
+OSC_IN
+Text Label 1700 9900 2    50   ~ 0
+OSC_IN
+Text Label 2550 9900 0    50   ~ 0
+OSC_OUT
+Text Label 7250 5450 2    50   ~ 0
+OSC32_OUT
+Text Label 7250 5350 2    50   ~ 0
+OSC32_IN
+Text Label 7250 5150 2    50   ~ 0
+VBat
+Text Label 7250 5250 2    50   ~ 0
+PC13
+Text Label 7250 5750 2    50   ~ 0
+nRST
+Text Label 7250 5850 2    50   ~ 0
+PA0
+Text Label 7250 5950 2    50   ~ 0
+PA1
+Text Label 7250 6050 2    50   ~ 0
+nCS
+Text Label 7250 6150 2    50   ~ 0
+SCLK
+Text Label 7250 6250 2    50   ~ 0
+PA4
+Text Label 7550 6950 3    50   ~ 0
+PA5
+Text Label 7650 6950 3    50   ~ 0
+SDIO3
+Text Label 7750 6950 3    50   ~ 0
+SDIO2
+Text Label 7850 6950 3    50   ~ 0
+PC4
+Text Label 7950 6950 3    50   ~ 0
+SDIO1
+Text Label 8050 6950 3    50   ~ 0
+SDIO0
+Text Label 8150 6950 3    50   ~ 0
+PB2
+Text Label 8250 6950 3    50   ~ 0
+VREF
+Text Label 8350 6950 3    50   ~ 0
+VDD
+Text Label 8450 6950 3    50   ~ 0
+PB10
+Text Label 8550 6950 3    50   ~ 0
+VDD
+Text Label 8650 6950 3    50   ~ 0
+PB11
+Text Label 9050 6250 0    50   ~ 0
+PB12
+Text Label 9050 6150 0    50   ~ 0
+PB13
+Text Label 9050 6050 0    50   ~ 0
+PB14
+Text Label 9050 5950 0    50   ~ 0
+PB15
+Text Label 9050 5850 0    50   ~ 0
+PC6
+Text Label 9050 5750 0    50   ~ 0
+PA8
+Text Label 9050 5650 0    50   ~ 0
+PA9
+Text Label 9050 5550 0    50   ~ 0
+PA10
+Text Label 9050 5250 0    50   ~ 0
+VDD
+Text Label 9050 5150 0    50   ~ 0
+PA13
+Text Label 8750 4250 1    50   ~ 0
+PA14
+Text Label 8650 4250 1    50   ~ 0
+PA15
+Text Label 8550 4250 1    50   ~ 0
+PC10
+Text Label 8450 4250 1    50   ~ 0
+PC11
+Text Label 8350 4250 1    50   ~ 0
+PB3
+Text Label 8250 4250 1    50   ~ 0
+PB4
+Text Label 8150 4250 1    50   ~ 0
+PB5
+Text Label 8050 4250 1    50   ~ 0
+PB6
+Text Label 7950 4250 1    50   ~ 0
+PB7
+Text Label 7850 4250 1    50   ~ 0
+PB8-BOOT0
+Text Label 7750 4250 1    50   ~ 0
+PB9
+Text Label 7650 4250 1    50   ~ 0
+VDD
+$Comp
+L power:GND #PWR0102
+U 1 1 612A61FB
+P 7550 4250
+F 0 "#PWR0102" H 7550 4000 50  0001 C CNN
+F 1 "GND" V 7555 4122 50  0000 R CNN
+F 2 "" H 7550 4250 50  0001 C CNN
+F 3 "" H 7550 4250 50  0001 C CNN
+	1    7550 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2(opt)1
+U 1 1 612A7155
+P 2400 10150
+F 0 "C2(opt)1" H 2515 10196 50  0000 L CNN
+F 1 "4p" H 2515 10105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2438 10000 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 2400 10150 50  0001 C CNN
+	1    2400 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1(opt)1
+U 1 1 612A7D24
+P 1800 10150
+F 0 "C1(opt)1" H 1300 10150 50  0000 L CNN
+F 1 "4p" H 1450 10050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 10000 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 1800 10150 50  0001 C CNN
+	1    1800 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 612A87C3
+P 1800 10300
+F 0 "#PWR0103" H 1800 10050 50  0001 C CNN
+F 1 "GND" H 1805 10127 50  0000 C CNN
+F 2 "" H 1800 10300 50  0001 C CNN
+F 3 "" H 1800 10300 50  0001 C CNN
+	1    1800 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 612A8D13
+P 2400 10300
+F 0 "#PWR0104" H 2400 10050 50  0001 C CNN
+F 1 "GND" H 2405 10127 50  0000 C CNN
+F 2 "" H 2400 10300 50  0001 C CNN
+F 3 "" H 2400 10300 50  0001 C CNN
+	1    2400 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 9900 1800 9900
+Wire Wire Line
+	1800 10000 1800 9900
+Connection ~ 1800 9900
+Wire Wire Line
+	1800 9900 1950 9900
+Wire Wire Line
+	2250 9900 2400 9900
+Wire Wire Line
+	2400 10000 2400 9900
+Connection ~ 2400 9900
+Wire Wire Line
+	2400 9900 2550 9900
+$Comp
+L Device:Crystal 32KHz_Crystal1
+U 1 1 612AADF3
+P 1950 8750
+F 0 "32KHz_Crystal1" H 1950 8926 50  0000 C CNN
+F 1 "32KHz crystal" H 1950 8927 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 1950 8750 50  0001 C CNN
+F 3 "~" H 1950 8750 50  0001 C CNN
+	1    1950 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 612AB920
+P 2300 8900
+F 0 "C4" H 2415 8946 50  0000 L CNN
+F 1 "12p" H 2415 8855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2338 8750 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 2300 8900 50  0001 C CNN
+	1    2300 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 612ABE2E
+P 1550 8900
+F 0 "C3" H 1300 8900 50  0000 L CNN
+F 1 "12p" H 1300 8800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1588 8750 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 1550 8900 50  0001 C CNN
+	1    1550 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 612AC60C
+P 1550 9050
+F 0 "#PWR0105" H 1550 8800 50  0001 C CNN
+F 1 "GND" H 1555 8877 50  0000 C CNN
+F 2 "" H 1550 9050 50  0001 C CNN
+F 3 "" H 1550 9050 50  0001 C CNN
+	1    1550 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 612ACA5D
+P 2300 9050
+F 0 "#PWR0106" H 2300 8800 50  0001 C CNN
+F 1 "GND" H 2305 8877 50  0000 C CNN
+F 2 "" H 2300 9050 50  0001 C CNN
+F 3 "" H 2300 9050 50  0001 C CNN
+	1    2300 9050
+	1    0    0    -1  
+$EndComp
+Text Label 2600 8750 0    50   ~ 0
+OSC32_OUT
+Wire Wire Line
+	2100 8750 2300 8750
+Connection ~ 2300 8750
+Wire Wire Line
+	2300 8750 2600 8750
+Text Label 1350 8750 2    50   ~ 0
+OSC32_IN
+Wire Wire Line
+	1350 8750 1550 8750
+Connection ~ 1550 8750
+Wire Wire Line
+	1550 8750 1800 8750
+$Comp
+L Device:Battery_Cell Battery1
+U 1 1 612AD632
+P 3400 9800
+F 0 "Battery1" H 3518 9896 50  0000 L CNN
+F 1 "LIR2032" H 3518 9805 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1058_1x2032" V 3400 9860 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Keystone-Electronics/1058?qs=1Og3oR3ILyCdlFdchHwycQ%3D%3D" V 3400 9860 50  0001 C CNN
+	1    3400 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 612ADEA3
+P 3400 9900
+F 0 "#PWR0107" H 3400 9650 50  0001 C CNN
+F 1 "GND" H 3405 9727 50  0000 C CNN
+F 2 "" H 3400 9900 50  0001 C CNN
+F 3 "" H 3400 9900 50  0001 C CNN
+	1    3400 9900
+	1    0    0    -1  
+$EndComp
+Text Label 3400 9350 1    50   ~ 0
+VBat
+Wire Wire Line
+	3400 9350 3400 9600
+$Comp
+L AUR9713AGH:AUR9713AGH BUCK3.3
+U 1 1 612B5C8E
+P 3000 1600
+F 0 "BUCK3.3" H 3500 1865 50  0000 C CNN
+F 1 "AUR9713AGH" H 3500 1774 50  0000 C CNN
+F 2 "SOT95P280X100-5N" H 3850 1700 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1911201411_Diodes-Incorporated-AUR9713AGH_C444990.pdf" H 3850 1600 50  0001 L CNN
+F 4 "Switching Voltage Regulators 1.5MHz 1A SD DC/DC 2.5V to 5.5V 600mV" H 3850 1500 50  0001 L CNN "Description"
+F 5 "1" H 3850 1400 50  0001 L CNN "Height"
+F 6 "Diodes Inc." H 3850 1300 50  0001 L CNN "Manufacturer_Name"
+F 7 "AUR9713AGH" H 3850 1200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "621-AUR9713AGH" H 3850 1100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AUR9713AGH?qs=FKu9oBikfSkdj2V%2FLRjOVw%3D%3D" H 3850 1000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3850 900 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 3850 800 50  0001 L CNN "Arrow Price/Stock"
+	1    3000 1600
+	1    0    0    -1  
+$EndComp
+Text Label 4550 1600 0    50   ~ 0
+Vin
+$Comp
+L Device:C C201
+U 1 1 612BD53C
+P 4400 1750
+F 0 "C201" H 4515 1796 50  0000 L CNN
+F 1 "4.7u" H 4515 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 1600 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/TDK/C1608X7S1A475K080AC?qs=sGAEpiMZZMsh%252B1woXyUXjxCfljjoHuZvXVuOIZN6H%252B0%3D" H 4400 1750 50  0001 C CNN
+	1    4400 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1600 4200 1600
+Connection ~ 4400 1600
+Wire Wire Line
+	4400 1600 4550 1600
+$Comp
+L power:GND #PWR0108
+U 1 1 612BDCCE
+P 4400 1900
+F 0 "#PWR0108" H 4400 1650 50  0001 C CNN
+F 1 "GND" H 4405 1727 50  0000 C CNN
+F 2 "" H 4400 1900 50  0001 C CNN
+F 3 "" H 4400 1900 50  0001 C CNN
+	1    4400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1600 2900 1600
+Wire Wire Line
+	2900 1600 2900 1250
+Wire Wire Line
+	2900 1250 4200 1250
+Wire Wire Line
+	4200 1250 4200 1600
+Connection ~ 4200 1600
+Wire Wire Line
+	4200 1600 4400 1600
+$Comp
+L Device:C C203
+U 1 1 612BE998
+P 3500 2250
+F 0 "C203" V 3248 2250 50  0000 C CNN
+F 1 "13p" V 3339 2250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3538 2100 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L101
+U 1 1 612BF3BA
+P 3000 1950
+F 0 "L101" H 3053 1996 50  0000 L CNN
+F 1 "2.2u" H 3053 1905 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 3000 1950 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Taiyo-Yuden/MCHK1608T2R2MKN?qs=sGAEpiMZZMv126LJFLh8y98Af%252Bx087xR954n3E2vI98%3D" H 3000 1950 50  0001 C CNN
+	1    3000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 612C0A30
+P 3500 2600
+F 0 "R101" V 3293 2600 50  0000 C CNN
+F 1 "450k" V 3384 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3430 2600 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ESvWgWMAZ9jx9FE2wg%3D%3D" H 3500 2600 50  0001 C CNN
+	1    3500 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R102
+U 1 1 612C1291
+P 4200 2600
+F 0 "R102" V 3993 2600 50  0000 C CNN
+F 1 "100k" V 4084 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4130 2600 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ESvWgWMAZ9jx9FE2wg%3D%3D" H 4200 2600 50  0001 C CNN
+	1    4200 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 2100 3000 2250
+Wire Wire Line
+	3000 2250 3350 2250
+Wire Wire Line
+	4000 1700 4000 2250
+Wire Wire Line
+	4000 2250 3650 2250
+$Comp
+L power:GND #PWR0109
+U 1 1 612C2CFC
+P 4350 2600
+F 0 "#PWR0109" H 4350 2350 50  0001 C CNN
+F 1 "GND" V 4355 2472 50  0000 R CNN
+F 2 "" H 4350 2600 50  0001 C CNN
+F 3 "" H 4350 2600 50  0001 C CNN
+	1    4350 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 2250 4000 2600
+Wire Wire Line
+	4000 2600 4050 2600
+Connection ~ 4000 2250
+Wire Wire Line
+	3650 2600 4000 2600
+Connection ~ 4000 2600
+Wire Wire Line
+	3000 2250 3000 2600
+Wire Wire Line
+	3000 2600 3350 2600
+Connection ~ 3000 2250
+$Comp
+L Device:C C202
+U 1 1 612C42D9
+P 2850 2600
+F 0 "C202" V 2598 2600 50  0000 C CNN
+F 1 "10u" V 2689 2600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2888 2450 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Murata-Electronics/GRM188R60J106ME84D?qs=sGAEpiMZZMsh%252B1woXyUXj5QCz55T1myueAPiep6iqmw%3D" H 2850 2600 50  0001 C CNN
+	1    2850 2600
+	0    1    1    0   
+$EndComp
+Connection ~ 3000 2600
+$Comp
+L power:GND #PWR0110
+U 1 1 612C74DF
+P 2650 2600
+F 0 "#PWR0110" H 2650 2350 50  0001 C CNN
+F 1 "GND" V 2655 2472 50  0000 R CNN
+F 2 "" H 2650 2600 50  0001 C CNN
+F 3 "" H 2650 2600 50  0001 C CNN
+	1    2650 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 2600 2650 2600
+Text Label 3000 2750 3    50   ~ 0
+VDD
+$Comp
+L power:GND #PWR0111
+U 1 1 612C8C36
+P 3000 1700
+F 0 "#PWR0111" H 3000 1450 50  0001 C CNN
+F 1 "GND" V 3005 1572 50  0000 R CNN
+F 2 "" H 3000 1700 50  0001 C CNN
+F 3 "" H 3000 1700 50  0001 C CNN
+	1    3000 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_B_Micro USB_IN1
+U 1 1 6130B30B
+P 1200 -800
+F 0 "USB_IN1" H 1257 -333 50  0000 C CNN
+F 1 "USB_B_Micro" H 1257 -424 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_GCT_USB3076-30-A" H 1257 -425 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/GCT/USB3076-30-A?qs=%2Fha2pyFadugta6%2Fva1Z%252BQwoUKvYeSa1slUHKBTQdOJM7YG6HRHfYyw%3D%3D" H 1350 -850 50  0001 C CNN
+	1    1200 -800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 61310654
+P 1150 -300
+F 0 "#PWR0112" H 1150 -550 50  0001 C CNN
+F 1 "GND" H 1155 -473 50  0000 C CNN
+F 2 "" H 1150 -300 50  0001 C CNN
+F 3 "" H 1150 -300 50  0001 C CNN
+	1    1150 -300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 -400 1100 -300
+Wire Wire Line
+	1100 -300 1150 -300
+Wire Wire Line
+	1200 -400 1200 -300
+Wire Wire Line
+	1200 -300 1150 -300
+Connection ~ 1150 -300
+Text Label 1500 -700 0    50   ~ 0
+USB_D-
+Text Label 1500 -800 0    50   ~ 0
+USB_D+
+Text Label 1500 -600 0    50   ~ 0
+USB_ID
+Text Label 1800 -1000 0    50   ~ 0
+Vin
+$Comp
+L Device:C C101
+U 1 1 613131BA
+P 3100 3100
+F 0 "C101" H 2985 3054 50  0000 R CNN
+F 1 "100n" H 2985 3145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3138 2950 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 3100 3100 50  0001 C CNN
+	1    3100 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C102
+U 1 1 61313DCB
+P 3550 3100
+F 0 "C102" H 3435 3054 50  0000 R CNN
+F 1 "100n" H 3435 3145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3588 2950 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 3550 3100 50  0001 C CNN
+	1    3550 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C103
+U 1 1 61314BD1
+P 4000 3100
+F 0 "C103" H 3885 3054 50  0000 R CNN
+F 1 "100n" H 3885 3145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 2950 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 4000 3100 50  0001 C CNN
+	1    4000 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C104
+U 1 1 61315166
+P 4400 3100
+F 0 "C104" H 4285 3054 50  0000 R CNN
+F 1 "100n" H 4285 3145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4438 2950 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 4400 3100 50  0001 C CNN
+	1    4400 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 2950 3100 2950
+Wire Wire Line
+	3000 2600 3000 2950
+Wire Wire Line
+	3100 2950 3550 2950
+Connection ~ 3100 2950
+Wire Wire Line
+	3550 2950 4000 2950
+Connection ~ 3550 2950
+Wire Wire Line
+	4400 2950 4000 2950
+Connection ~ 4000 2950
+$Comp
+L power:GND #PWR0113
+U 1 1 6131791C
+P 3100 3250
+F 0 "#PWR0113" H 3100 3000 50  0001 C CNN
+F 1 "GND" H 3105 3077 50  0000 C CNN
+F 2 "" H 3100 3250 50  0001 C CNN
+F 3 "" H 3100 3250 50  0001 C CNN
+	1    3100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 61318235
+P 3550 3250
+F 0 "#PWR0114" H 3550 3000 50  0001 C CNN
+F 1 "GND" H 3555 3077 50  0000 C CNN
+F 2 "" H 3550 3250 50  0001 C CNN
+F 3 "" H 3550 3250 50  0001 C CNN
+	1    3550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 6131863C
+P 4000 3250
+F 0 "#PWR0115" H 4000 3000 50  0001 C CNN
+F 1 "GND" H 4005 3077 50  0000 C CNN
+F 2 "" H 4000 3250 50  0001 C CNN
+F 3 "" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 61318961
+P 4400 3250
+F 0 "#PWR0116" H 4400 3000 50  0001 C CNN
+F 1 "GND" H 4405 3077 50  0000 C CNN
+F 2 "" H 4400 3250 50  0001 C CNN
+F 3 "" H 4400 3250 50  0001 C CNN
+	1    4400 3250
+	1    0    0    -1  
+$EndComp
+Text Notes 2250 3300 0    50   ~ 0
+..1: VDD_1\n..2: VDD_2\n..3: VDD_3\n..4: VDDA
+Text Label 9050 5450 0    50   ~ 0
+USB_D-
+Text Label 9050 5350 0    50   ~ 0
+USB_D+
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J1
+U 1 1 612D3322
+P 3800 5500
+F 0 "J1" H 3850 6025 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 3850 6026 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 3800 5500 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Samtec/SSQ-110-23-L-D?qs=%252BZP6%2F%252BtExtARWAN2o%252BG5sw%3D%3D" H 3800 5500 50  0001 C CNN
+	1    3800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J2
+U 1 1 612D5304
+P 2550 5500
+F 0 "J2" H 2600 6025 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 2600 6026 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 2550 5500 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Samtec/SSQ-110-23-L-D?qs=%252BZP6%2F%252BtExtARWAN2o%252BG5sw%3D%3D" H 2550 5500 50  0001 C CNN
+	1    2550 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_Flash:W25Q32JVSS FLASH1
+U 1 1 612D8495
+P 11150 5850
+F 0 "FLASH1" H 11600 5300 50  0000 C CNN
+F 1 "W25Q64JWZPIM" H 11600 5400 50  0000 C CNN
+F 2 "Package_SON:WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm" H 11150 5850 50  0001 C CNN
+F 3 "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf" H 11150 5850 50  0001 C CNN
+	1    11150 5850
+	1    0    0    -1  
+$EndComp
+Text Label 10650 5750 2    50   ~ 0
+nCS
+Text Label 10650 5950 2    50   ~ 0
+SCLK
+$Comp
+L power:GND #PWR0117
+U 1 1 612D9254
+P 11150 6250
+F 0 "#PWR0117" H 11150 6000 50  0001 C CNN
+F 1 "GND" V 11155 6122 50  0000 R CNN
+F 2 "" H 11150 6250 50  0001 C CNN
+F 3 "" H 11150 6250 50  0001 C CNN
+	1    11150 6250
+	1    0    0    -1  
+$EndComp
+Text Label 11150 5200 1    50   ~ 0
+VDD
+$Comp
+L Device:C C105
+U 1 1 612DA1CE
+P 11000 5350
+F 0 "C105" H 10885 5304 50  0000 R CNN
+F 1 "100n" H 10885 5395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 11038 5200 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=grm1555" H 11000 5350 50  0001 C CNN
+	1    11000 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11150 5450 11150 5350
+Connection ~ 11150 5350
+Wire Wire Line
+	11150 5350 11150 5200
+$Comp
+L power:GND #PWR0118
+U 1 1 612DC479
+P 10850 5350
+F 0 "#PWR0118" H 10850 5100 50  0001 C CNN
+F 1 "GND" V 10855 5222 50  0000 R CNN
+F 2 "" H 10850 5350 50  0001 C CNN
+F 3 "" H 10850 5350 50  0001 C CNN
+	1    10850 5350
+	0    1    1    0   
+$EndComp
+Text Label 11650 5650 0    50   ~ 0
+SDIO0
+Text Label 11650 5750 0    50   ~ 0
+SDIO1
+Text Label 11650 5950 0    50   ~ 0
+SDIO2
+Text Label 11650 6050 0    50   ~ 0
+SDIO3
+Text Label 3000 -1500 1    50   ~ 0
+Vin
+$Comp
+L power:GND #PWR0119
+U 1 1 612DE53F
+P 3000 -100
+F 0 "#PWR0119" H 3000 -350 50  0001 C CNN
+F 1 "GND" H 3005 -273 50  0000 C CNN
+F 2 "" H 3000 -100 50  0001 C CNN
+F 3 "" H 3000 -100 50  0001 C CNN
+	1    3000 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED_VERDE1
+U 1 1 61341CDB
+P 5550 8400
+F 0 "LED_VERDE1" H 5543 8617 50  0000 C CNN
+F 1 "LED" H 5543 8526 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5550 8400 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/OSRAM-Opto-Semiconductors/LP-L296-J2L2-25-Z?qs=sGAEpiMZZMu2UVWuvJ5cF9ZzMGkW%2FQMQQ6%2Fk1iMV8Vs%3D" H 5550 8400 50  0001 C CNN
+	1    5550 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED LED_ROJO1
+U 1 1 61342A89
+P 5550 8800
+F 0 "LED_ROJO1" H 5543 9017 50  0000 C CNN
+F 1 "LED" H 5543 8926 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5550 8800 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/OSRAM-Opto-Semiconductors/LS-L296-P2Q2-1-Z?qs=nTDll3UaDK5SSFhGI76fkA%3D%3D" H 5550 8800 50  0001 C CNN
+	1    5550 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R_LED_VERDE1
+U 1 1 61342D26
+P 5850 8400
+F 0 "R_LED_VERDE1" V 5643 8400 50  0000 C CNN
+F 1 "220" V 5734 8400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5780 8400 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ESvWgWMAZ9jx9FE2wg%3D%3D" H 5850 8400 50  0001 C CNN
+	1    5850 8400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R_LED_ROJO1
+U 1 1 61344170
+P 5850 8800
+F 0 "R_LED_ROJO1" V 5643 8800 50  0000 C CNN
+F 1 "180" V 5734 8800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5780 8800 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ESvWgWMAZ9jx9FE2wg%3D%3D" H 5850 8800 50  0001 C CNN
+	1    5850 8800
+	0    1    1    0   
+$EndComp
+Text Label 6000 8800 0    50   ~ 0
+PA1
+Text Label 6000 8400 0    50   ~ 0
+PA0
+$Comp
+L power:GND #PWR0120
+U 1 1 61344AF7
+P 5400 8400
+F 0 "#PWR0120" H 5400 8150 50  0001 C CNN
+F 1 "GND" H 5405 8227 50  0000 C CNN
+F 2 "" H 5400 8400 50  0001 C CNN
+F 3 "" H 5400 8400 50  0001 C CNN
+	1    5400 8400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 61345269
+P 5400 8800
+F 0 "#PWR0121" H 5400 8550 50  0001 C CNN
+F 1 "GND" H 5405 8627 50  0000 C CNN
+F 2 "" H 5400 8800 50  0001 C CNN
+F 3 "" H 5400 8800 50  0001 C CNN
+	1    5400 8800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SWRST1
+U 1 1 6134711B
+P 5500 9700
+F 0 "SWRST1" H 5500 9967 50  0000 C CNN
+F 1 "SW_DIP_x01" H 5500 9876 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_PTS645" H 5500 9700 50  0001 C CNN
+F 3 "https://www.mouser.ca/c/?q=pts645" H 5500 9700 50  0001 C CNN
+	1    5500 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R_RST1
+U 1 1 61347E06
+P 5950 9700
+F 0 "R_RST1" V 5743 9700 50  0000 C CNN
+F 1 "100" V 5834 9700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 9700 50  0001 C CNN
+F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ESvWgWMAZ9jx9FE2wg%3D%3D" H 5950 9700 50  0001 C CNN
+	1    5950 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 61348501
+P 5200 9700
+F 0 "#PWR0122" H 5200 9450 50  0001 C CNN
+F 1 "GND" H 5205 9527 50  0000 C CNN
+F 2 "" H 5200 9700 50  0001 C CNN
+F 3 "" H 5200 9700 50  0001 C CNN
+	1    5200 9700
+	0    1    1    0   
+$EndComp
+Text Label 6100 9700 0    50   ~ 0
+nRST
+$EndSCHEMATC
