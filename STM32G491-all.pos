@@ -1,0 +1,36 @@
+### Module positions - created on 08/31/21 20:11:09 ###
+### Printed by Pcbnew version kicad (5.1.9)-1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref                 Val                   Package                                    PosX       PosY       Rot  Side
+Battery1              LIR2032               BatteryHolder_Keystone_1058_1x2032     186.0000   -79.8500    0.0000  bottom
+32KHz_Crystal1        32KHz_crystal         Crystal_SMD_3215-2Pin_3.2x1.5mm        187.2000   -72.5000   90.0000  top
+BUCK3.3               AUR9713AGH            SOT95P280X100-5N                       211.0000   -87.4000  270.0000  top
+C1(opt)1              4p                    C_0402_1005Metric                      183.4000   -76.1000  180.0000  top
+C2(opt)1              4p                    C_0402_1005Metric                      183.4000   -78.5000  180.0000  top
+C3                    12p                   C_0402_1005Metric                      183.4000   -71.3000  180.0000  top
+C4                    12p                   C_0402_1005Metric                      183.4000   -73.9000  180.0000  top
+C101                  100n                  C_0402_1005Metric                      199.2000   -85.2500   90.0000  top
+C102                  100n                  C_0402_1005Metric                      201.7000   -74.8500  270.0000  top
+C103                  100n                  C_0402_1005Metric                      192.5000   -74.1000    0.0000  top
+C104                  100n                  C_0402_1005Metric                      197.4000   -85.2500   90.0000  top
+C105                  100n                  C_0402_1005Metric                      177.4000   -88.4000  270.0000  top
+C201                  4.7u                  C_0603_1608Metric                      214.4000   -87.0000   90.0000  top
+C202                  10u                   C_0603_1608Metric                      206.8000   -83.4000    0.0000  top
+C203                  13p                   C_0402_1005Metric                      204.2000   -86.1000   90.0000  top
+Crystal_48MHz1        CX2016DB48000C0FPLC1  Crystal_SMD_2016-4Pin_2.0x1.6mm        187.2000   -77.1000  225.0000  top
+EMI_VDDS_FILTER_USB1  BLM18HE152SN1D_       L_0603_1608Metric                      208.8000   -80.4000   90.0000  top
+FLASH                 W25Q64JWZPIM          WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm   180.2000   -84.0000  180.0000  top
+IC1                   TPD6E004RSER          RSE0008A                               206.2000   -79.9000  180.0000  top
+L101                  2.2u                  L_0603_1608Metric                      207.5000   -86.4000   90.0000  top
+Led_Rojo_(PA1)        LED                   LED_0603_1608Metric                    170.7000   -77.6000    0.0000  top
+Led_Verde_(PA0)       LED                   LED_0603_1608Metric                    170.7000   -75.7000    0.0000  top
+R101                  450k                  R_0402_1005Metric                      205.5000   -86.1000   90.0000  top
+R102                  100k                  R_0402_1005Metric                      205.0000   -88.5000    0.0000  top
+RST                   SW_DIP_x01            SW_SPST_PTS645                         164.2000   -79.7500  270.0000  top
+R_LED_ROJO1           180                   R_0402_1005Metric                      174.1000   -77.6000  180.0000  top
+R_LED_VERDE1          220                   R_0402_1005Metric                      174.1000   -75.7000  180.0000  top
+R_RST1                100                   R_0402_1005Metric                      179.0000   -74.3000   90.0000  top
+STM32                 STM32G491CCU6         QFN50P700X700X60-49N-D                 196.6000   -79.2500    0.0000  top
+USB_IN1               USB_B_Micro           USB_Micro-B_GCT_USB3076-30-A           213.2500   -77.4000   90.0000  top
+## End

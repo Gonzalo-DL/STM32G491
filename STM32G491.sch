@@ -762,10 +762,10 @@ F 3 "" H 3000 -100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED LED_VERDE
+L Device:LED LED_VERDE1
 U 1 1 61341CDB
 P 5550 8400
-F 0 "LED_VERDE" H 5543 8617 50  0000 C CNN
+F 0 "LED_VERDE1" H 5543 8617 50  0000 C CNN
 F 1 "LED" H 5543 8526 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5550 8400 50  0001 C CNN
 F 3 "https://www.mouser.ca/ProductDetail/OSRAM-Opto-Semiconductors/LP-L296-J2L2-25-Z?qs=sGAEpiMZZMu2UVWuvJ5cF9ZzMGkW%2FQMQQ6%2Fk1iMV8Vs%3D" H 5550 8400 50  0001 C CNN
@@ -773,10 +773,10 @@ F 3 "https://www.mouser.ca/ProductDetail/OSRAM-Opto-Semiconductors/LP-L296-J2L2-
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED LED_ROJO
+L Device:LED LED_ROJO1
 U 1 1 61342A89
 P 5550 8800
-F 0 "LED_ROJO" H 5543 9017 50  0000 C CNN
+F 0 "LED_ROJO1" H 5543 9017 50  0000 C CNN
 F 1 "LED" H 5543 8926 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5550 8800 50  0001 C CNN
 F 3 "https://www.mouser.ca/ProductDetail/OSRAM-Opto-Semiconductors/LS-L296-P2Q2-1-Z?qs=nTDll3UaDK5SSFhGI76fkA%3D%3D" H 5550 8800 50  0001 C CNN
@@ -784,10 +784,10 @@ F 3 "https://www.mouser.ca/ProductDetail/OSRAM-Opto-Semiconductors/LS-L296-P2Q2-
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R_LED_VERDE
+L Device:R R_LED_VERDE1
 U 1 1 61342D26
 P 5850 8400
-F 0 "R_LED_VERDE" V 5643 8400 50  0000 C CNN
+F 0 "R_LED_VERDE1" V 5643 8400 50  0000 C CNN
 F 1 "220" V 5734 8400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5780 8400 50  0001 C CNN
 F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ESvWgWMAZ9jx9FE2wg%3D%3D" H 5850 8400 50  0001 C CNN
@@ -795,10 +795,10 @@ F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ES
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R_LED_ROJO
+L Device:R R_LED_ROJO1
 U 1 1 61344170
 P 5850 8800
-F 0 "R_LED_ROJO" V 5643 8800 50  0000 C CNN
+F 0 "R_LED_ROJO1" V 5643 8800 50  0000 C CNN
 F 1 "180" V 5734 8800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5780 8800 50  0001 C CNN
 F 3 "https://www.mouser.ca/ProductDetail/Vishay-Dale/CRCW0402220RFKEDC?qs=E3Y5ESvWgWMAZ9jx9FE2wg%3D%3D" H 5850 8800 50  0001 C CNN
